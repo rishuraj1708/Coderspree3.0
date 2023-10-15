@@ -1,0 +1,25 @@
+vector<int> generateFibonacciNumbers(int n) {
+    // Write your code here.
+    int a = 0, b = 1, c;
+    vector<int>v;
+    if(n == 1){
+        v.push_back(a);
+    }
+    else if( n == 2){
+        v.push_back(a);
+        v.push_back(b);
+    }
+    else{
+     v.push_back(a);
+     v.push_back(b);
+     while (3 <= n) {
+        c = a + b;
+        a = b;
+        b = c;
+        v.push_back(c);
+        n--;
+     }
+    }
+    return v;
+
+}
