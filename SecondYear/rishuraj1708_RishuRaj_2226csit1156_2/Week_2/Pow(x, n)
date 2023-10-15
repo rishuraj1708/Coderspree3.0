@@ -1,0 +1,5 @@
+double myPow(double x, int n) {
+    // Write Your Code Here
+    double num = pow(x, n);
+    return num;
+}
