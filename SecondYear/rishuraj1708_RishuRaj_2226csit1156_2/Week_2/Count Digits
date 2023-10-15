@@ -1,0 +1,17 @@
+int countDigits(int n){
+	// Write your code here.
+	int n1 = n;
+	int count = 0;
+	while(n1!=0){
+		int rem = n1 % 10;
+		if(rem == 0){
+			n1 = n1/10;
+			continue;
+		}
+		else if(n % rem == 0){
+			count++;
+		}
+		n1 = n1 / 10;
+	}	
+	return count;
+}
