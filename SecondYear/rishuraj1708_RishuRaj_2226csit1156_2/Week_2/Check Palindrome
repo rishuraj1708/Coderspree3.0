@@ -1,0 +1,17 @@
+bool palindrome(int n)
+{
+    // Write your code here
+    int n1 = n;
+    int rev_num = 0;
+    while(n!=0){
+        int rem = n % 10 ;
+        rev_num = rev_num *10 + rem ;
+        n = n/10;
+    }
+    if(n1 == rev_num){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
